@@ -1,0 +1,27 @@
+experiment_name: log-02-10-SortEncoder
+
+model:
+  name: "SortEncoder"
+  input_size: 10
+  d_token: 256
+  num_heads: 4
+  num_layers: 4
+  d_ff: 1024
+  dropout: 0.1
+  output_size: 10
+
+training:
+  epochs: 1000
+  batch_size: 128
+  learning_rate: 0.001
+
+device: cuda
+
+evaluation:
+  eval_batch_size: 64
+  eval_enabled: true
+
+data:
+  dataset_size: 20000
+
+checkpoints_path: "checkpoints/SortEncoder-2-10/"
