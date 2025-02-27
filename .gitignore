@@ -1,2 +1,2 @@
-checkpoints/
-experiments/
+checkpoints/*
+experiments/*
